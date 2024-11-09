@@ -71,7 +71,7 @@ const [todoList, setTodoList] = useState(
                 <legend className='text-pink-600 font-medium text-lg'>List of tasks</legend>
                     {todoList.length===0?(<p className='text-center text-red-700 text-sm'>No Available Tasks</p>)
                     :(
-                        todoList.map((todo,index)=>{
+                        todoList.map((todo,index)=>{ 
                             return <TodoItem text={todo.text} key={index} 
                             isComplete={todo.isComplete} id={todo.id} 
                             finishedTask={finishedTask}
